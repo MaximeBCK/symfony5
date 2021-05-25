@@ -6,6 +6,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+
+/**
+ * @Route("/programs", name="program_")
+ */
+
 class ProgramController extends AbstractController
 {
     /**
@@ -16,5 +21,12 @@ class ProgramController extends AbstractController
         return $this->render('program/index.html.twig', [
             'website' => 'Wild Séries',
         ]);
+    }
+    /**
+     * @Route("/programs/{id}", methods={"GET"}, requirements={"page"="\d+"}, name="program_show")
+     */
+    public function show($id): Response
+    {
+        return $this->render('program_show', ['id' => $id]);
     }
 }
