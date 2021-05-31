@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 
 /**
- * @Route("/default", name="default_")
+ * @Route("/", name="default_")
  */
 class DefaultController extends AbstractController
 {
