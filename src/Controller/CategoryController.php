@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/categories", name="category_")
+ * @Route("/catego ries", name="category_")
  */
 
 class CategoryController  extends AbstractController
